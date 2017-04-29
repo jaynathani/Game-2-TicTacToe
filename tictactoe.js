@@ -81,7 +81,7 @@ function checkRepeat(){
         if(bX.status == 0 && stat[r][c] == 0){
           bX.status = 1;
           drawX();
-          setTimeout(function(){checkWinX();}, 100); //0.3 seconds delay
+          setTimeout(function(){checkWinX();}, 100); //0.1 seconds delay
           count--;
           stat[r][c] = 1;
           break;
@@ -93,7 +93,7 @@ function checkRepeat(){
         if(bO.status == 0 && stat[r][c] == 0){
           bO.status = 1;
           drawO();
-          setTimeout(function(){checkWinY();}, 100); //0.3 seconds delay
+          setTimeout(function(){checkWinY();}, 100); //0.1 seconds delay
           count--;
           stat[r][c] = 1;
           break;
